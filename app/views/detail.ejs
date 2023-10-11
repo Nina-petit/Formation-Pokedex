@@ -1,0 +1,74 @@
+<%- include('partials/header') %>
+
+        <h1>Détails de <%=pokemon.nom%></h1>
+
+        <article class="detailCard">
+            <img src="/img/<%=pokemon.numero%>.png" alt="Illustration de <%=pokemon.nom%>">
+            <div class="detailCardInfos">
+                <h2>#<%=pokemon.numero%> <%=pokemon.nom%></h2>
+                <% types.forEach((type) => { %>
+                    <a href="/types/<%=type.id%>" class="typeSpan" style="background-color: #<%=type.color%>"><%=type.name%></a>
+                <% }) %>
+                <h3>Statistiques</h3>
+                <table>
+                    <tr>
+                        <th>PV</th>
+                        <td><%=pokemon.pv%></td>
+                        <td>
+                            <div class="statisticBar">
+                                <div class="barFilling" style="width: <%=pokemon.pv%>px"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Attaque</th>
+                        <td><%=pokemon.attaque%></td>
+                        <td>
+                            <div class="statisticBar">
+                                <div class="barFilling" style="width: <%=pokemon.attaque%>px"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Défense</th>
+                        <td><%=pokemon.defense%></td>
+                        <td>
+                            <div class="statisticBar">
+                                <div class="barFilling" style="width: <%=pokemon.defense%>px"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Attaque Spé.</th>
+                        <td><%=pokemon.attaque_spe%></td>
+                        <td>
+                            <div class="statisticBar">
+                                <div class="barFilling" style="width: <%=pokemon.attaque_spe%>px"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Défense Spé</th>
+                        <td><%=pokemon.defense_spe%></td>
+                        <td>
+                            <div class="statisticBar">
+                                <div class="barFilling" style="width: <%=pokemon.defense_spe%>px"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Vitesse</th>
+                        <td><%=pokemon.vitesse%></td> 
+                        <td>
+                            <div class="statisticBar">
+                                <div class="barFilling" style="width: <%=pokemon.vitesse%>px"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+        <a id="backToList" href="/">Revenir à la liste</a>
+    </main>
+</body>
+</html>

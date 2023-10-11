@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  },
+  "name": "formation-pokedex",
+  "description": "Apprentis professeurs Chen, j'ai une requête pour vous ! Je souhaiterais un pokédex tout beau, tout neuf !",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nina-petit/Formation-Pokedex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nina-petit/Formation-Pokedex/issues"
+  },
+  "homepage": "https://github.com/Nina-petit/Formation-Pokedex#readme"
+}

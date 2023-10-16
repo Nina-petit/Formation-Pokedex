@@ -7,9 +7,8 @@ Il s'agissait de créer un dictionnaire de tous les pokémon, avec **EJS**, **Ex
 
 ## Technologies
 
-- HTML
-- CSS
 - EJS
+- CSS
 - Node.js
 - Express.js
 - PostgreSQL
